@@ -847,7 +847,6 @@ Device (\_SB.PCI0.PEGP.DEV0) {
 	Method (_ON) {
 		Printf("NVIDIA _ON {")
 
-		/*
 		If (_STA != 0xF) {
 			GPPR(1)
 
@@ -892,7 +891,6 @@ Device (\_SB.PCI0.PEGP.DEV0) {
 			Printf("  _STA = 0xF")
 			_STA = 0xF
 		}
-		*/
 
 		Printf("} NVIDIA _ON")
 	}
@@ -900,7 +898,6 @@ Device (\_SB.PCI0.PEGP.DEV0) {
 	Method (_OFF) {
 		Printf("NVIDIA _OFF {")
 
-		/*
 		If (_STA != 0x5) {
 			Printf("  LTRE = %o", SFST(LREN))
 			LTRE = LREN
@@ -912,7 +909,6 @@ Device (\_SB.PCI0.PEGP.DEV0) {
 			Printf("  _STA = 0x5")
 			_STA = 0x5
 		}
-		*/
 
 		Printf("} NVIDIA _OFF")
 	}
